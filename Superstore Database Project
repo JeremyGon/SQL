@@ -36,8 +36,7 @@ ORDER BY price desc;
 
 #Show a statistic about the item prices.
 SELECT sum(price)
-FROM superstore
-;
+FROM superstore;
 
 #Show a statistic about the price for items in the category of "Kitchen Supplies". 
 SELECT sum(price), max(price), avg(price), min(price), count(price)
@@ -47,5 +46,4 @@ WHERE category = 'Kitchen Supplies';
 #How many air purifiers are in stock?
 SELECT sum(stock_quantity)
 FROM superstore
-WHERE item_name = 'Air Purifier'
-;
+WHERE item_name = 'Air Purifier';
